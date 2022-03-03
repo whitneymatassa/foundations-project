@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="campsite reservation booking site for Wild Springs State Park Campground.">
+    <meta name="keywords" content="campground, campsite, reservations, wild springs state park">
+    <meta name="author" content="Campground Owner & Operators">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <title>Wildspring State Park Campsite Reservations</title>
+
+</head>
+<body>
+    <header class="container">
+            <img id="logo" class="headline" src="blue-logo.png">
+            <h1 id="title" class="headline">Wildspring State Park</h1>
+            <div id="social-icons" class="headline">  
+                    <i class="fa fa-facebook-official" style="font-size:40px"></i>
+                    <i class="fa fa-google-plus-official" style="font-size:40px" style="color:black"></i>
+                    <i class="fa fa-instagram" style="font-size:40px" style="color:black"></i>      
+            </div>
+    </header>
+    
+    <section class="container" id="welcome">
+    
+        <div class=welcome id="welcome-text">
+            <h2 id = welcome-header"">Welcome to <br>Wildspring State Park <br>Campground</h2>
+            <p id="welcome-paragraph">Wildspring State Park is a 70 mile recreational corridor, great for canoeing, hiking, jogging, biking, fishing and horseback riding. The 25 site campground is located next to the Wildspring River and provides overnight and multiday access to tent and rv sites, along with access to the campgrounds facilities and reources. Join us for a visit to one of the states great natural treasures.</p>
+        </div>
+        
+    </section>
+
+    <form id="search-form" class="container">
+        <div class="search-input" id="checkin">
+        Check-in:  
+            <input id="check-in" type="date" required="true"></div>
+        <div class="search-input" id="checkout">
+        Check-out:  
+            <input id="check-out" type="date" required="true"></div>
+        <div class="search-input">
+        Group Size: 
+        <select id=group-size required="true">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            </select>
+        </div>
+        <div class="search-input">
+        <input id="rv-site" class="site-type" type="radio" value="rv">
+        RV Accessible Site </div>
+        <div class="search-input">
+        <input id ="tent-site" class="site-type" type = "radio" value="tent">
+        Tent Site Only </div>
+        <button id="search-button" >Search for Available Campsites</button>
+    </form>
+
+    <main id = "middle-container" class ="middle">
+        <div id = "campsite-container-2" class ="middle">
+            <h3 id ="campsite-header">Available Campsites:</h3>
+            <div id = "campsite-container"></div>
+        </div>
+            
+        <div id = "map-info-container" class ="middle">
+            <h5>Campsite Map</h5>
+            <img id="map" src="wildspring-campground-map.png">
+            <p id="campground-details">Camground Open May through October. Gate is open 7am to 9pm daily. Wood available for purchase. Each campsite has a metal fire ring and picnic table included.</p>
+        </div>
+
+    </main>
+
+    <section id = "bottom" class="container">
+        <div id="adress" class="column">
+            <ul id="address-list">
+                <h4>Wildspring State Park Campground</h4>
+                <p>123 Fake Address Blvd</p>
+                <p>P.O. Box 1111</p>
+                <p>Not Real Town, Pretend State 01011</p>
+                <p>1-444-333-2222</p>
+                <p>contact@wildspringsstatepark.rec</p>
+                <p>Hours</p>
+                <p>8:30am - 5:00pm Monday</p>
+                <p>8:30am - 5:00pm Tuesday</p>
+                <p>8:30am - 5:00pm Wednesday</p>
+                <p>8:30am - 5:00pm Thursday</p>
+                <p>8:30am - 6:00pm Friday</p>
+                <p>9:00am - 6:00pm Saturday</p>
+                <p>11:00am - 4:00pm Sunday</p>
+                <p>Seasonally Open from May until October</p>
+            </ul>
+        </div>
+        <div id="road-map-container">
+            <img id="road-map" class ="column" src="road-map.png">
+            <p id="direction-data">Wildpring State Park is located 50 miles south of the city capital. Guests can easily reach us within an hour drive of either of the regional airports. Running along the western bank of our states' beautiful Wildspring scenic waterway, the campground's main entrance is located at the north end of the park, at the turn-off from route 44 right, mile marker 20, right before Wildspring Bridge.</p>
+            </div>
+            <div class="contact-container">
+                <h3 id = "contact-header">Contact Wildspring</h3>
+                <form action="#" name="contact_form">
+                    <label for="first_name">First Name</label>
+                    <input class="contact" name="first_name" type="text" required="yes"/>
+                    <br>
+                    <label for="last_name">Last Name</label>
+                    <input class="contact" name="last_name" type="text" required="yes"/>
+                    <br>
+                    <label for="email">Email</label>
+                    <input class="contact" name="email" type="email" required="yes"/>
+                    <br>
+                    <label for="message">Message</label><br>
+                    <textarea class="contact" name="message" cols="30" rows="25" placeholder="Enter your message here ..." required> </textarea>
+                    <div class="center">
+                        <input value ="Send Contact Message" id="contact-submit" type="button" onclick="sendEmail()"/>
+                    </div>
+                </form>	
+            </div>
+    
+    </section>
+
+
+
+    <footer>
+        <p class="footer-text">Copyright 2022</p>
+        <p class="footer-text">All of the information provided on this site is entirely made up and no actually campsite reservation is being made.</p>
+    </footer>
+    
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="home.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="email.js"></script>
+</body>
+</html>
